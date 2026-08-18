@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DURAPO | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      background: linear-gradient(180deg, #1e293b 0%, var(--bg-color) 100%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.25rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-item {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DURAPO</h1>
+    <p>Web, Android, IoT Developer & Cybersecurity Specialist</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm <strong>DURAPO</strong>, a developer specializing in modern web platforms, Android applications, and IoT solutions. With a focus on cybersecurity, system administration, and robust backend infrastructure, I build resilient, high-performance digital tools.
+      </p>
+    </section>
+
+    <section id="services">
+      <h2>Areas of Expertise</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Modern, responsive, and secure web applications tailored for speed and performance.</p>
+        </div>
+        <div class="card">
+          <h3>Mobile App Development</h3>
+          <p>Native and modern Android application design focused on usability and efficiency.</p>
+        </div>
+        <div class="card">
+          <h3>Cybersecurity & Pentesting</h3>
+          <p>Vulnerability assessment, security auditing, and digital asset defense.</p>
+        </div>
+        <div class="card">
+          <h3>IoT & Embedded Systems</h3>
+          <p>Automation workflows, circuit prototyping, and hardware-software communication.</p>
+        </div>
+        <div class="card">
+          <h3>Server Management & Linux</h3>
+          <p>Production server hardening, deployment automation, and system administration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Key Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item"><span>Linux Systems</span><strong>90%</strong></div>
+        <div class="skill-item"><span>Cybersecurity</span><strong>90%</strong></div>
+        <div class="skill-item"><span>Python</span><strong>85%</strong></div>
+        <div class="skill-item"><span>IoT / ESP / C++</span><strong>85%</strong></div>
+        <div class="skill-item"><span>JavaScript / Web</span><strong>80%</strong></div>
+        <div class="skill-item"><span>Server Ops</span><strong>90%</strong></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p style="color: var(--text-muted);">
+        Reach out directly via your preferred email or connect on GitHub to collaborate on open-source projects.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 DURAPO. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
